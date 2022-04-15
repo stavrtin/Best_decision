@@ -22,3 +22,8 @@ actions.click(button_zakl)
 actions.perform()
     
     
+Селен
+ #### ---- нажимаем PageDown кнопку  ------
+    actions = ActionChains(driver)
+    actions.key_down(Keys.PAGE_DOWN)
+    actions.perform()
