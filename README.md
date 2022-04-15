@@ -13,6 +13,13 @@ url = 'https://sport-dealer.ru/search/?query=Amino+X%2C+435+g'
 ------------------------------------------------
  
 Селен
+          # -------------------ХРОМДРАЙВЕР-------------------
+          options = webdriver.ChromeOptions()
+          options.add_experimental_option('excludeSwitches', ['enable-logging'])
+          s=Service('C:/chromedriver.exe')
+          driver = webdriver.Chrome(service=s, options=options)
+
+
  #### ---- нажимаем кнопку ПРОЧАЯ ИНФОРМАЦИЯ ------
  
       button_zakl = driver.find_elements(By.XPATH, '//div[@class ="mat-tab-label-content"]')[1] # --- закладка ----
