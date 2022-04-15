@@ -1,15 +1,15 @@
 Просто респонсы 
 --------------------------------------------
-#### Импортируем библиотеки
-from pprint import  pprint
-from lxml import html
-import requests
+     #### Импортируем библиотеки
+     from pprint import  pprint
+     from lxml import html
+     import requests
 
 url = 'https://sport-dealer.ru/search/?query=Amino+X%2C+435+g'
 
-response = requests.get(url)
-dom = html.fromstring(response.text)
-dom.xpath('//h1')[0].text
+    response = requests.get(url)
+    dom = html.fromstring(response.text)
+    dom.xpath('//h1')[0].text
 ------------------------------------------------
  
 Селен
@@ -27,3 +27,13 @@ dom.xpath('//h1')[0].text
     actions = ActionChains(driver)
     actions.key_down(Keys.PAGE_DOWN)
     actions.perform()
+
+-----------------------------------------
+Цвета
+https://github.com/ikalnytskyi/termcolor
+
+     from termcolor import colored, cprint
+
+     print(colored('Привет мир!', 'green', attrs=['underline']))
+     # print(colored('Hello, World!', 'green', 'on_grey', 'blink'))
+     print(colored('Hello, World!', 'red', 'on_grey', ['blue', 'blink']))
