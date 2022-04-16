@@ -45,3 +45,8 @@ https://github.com/ikalnytskyi/termcolor
      print(colored('Привет мир!', 'green', attrs=['underline']))
      # print(colored('Hello, World!', 'green', 'on_grey', 'blink'))
      print(colored('Hello, World!', 'red', 'on_grey', ['blue', 'blink']))
+-------------------------------------------------------------------
+     pip freeze > requirements.txt
+     python -m pip install -r requirements.txt  
+     или 
+     pip install -r requirements.txt 
