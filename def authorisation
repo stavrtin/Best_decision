@@ -1,0 +1,25 @@
+def authorisation():
+    '''Авторизация на сайте производителя
+    входные данные: ( )
+    :return session содержащий заголовки и куки для авторизованной работы на сайте'''
+
+    url = 'https://sportpitinvest.ru/login'
+    user_agent_val = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:96.0) Gecko/20100101 Firefox/96.0'
+
+    # Создаю сессию и указываю ему наш user-agent
+    session = requests.Session()
+    r = session.get(url, headers = {'User-Agent': user_agent_val})
+    dom = html.fromstring(r.text)
+
+    # Получаю значение _csrf-frontend из cookies
+    csrf = dom.xpath("//meta[@name='csrf-token']/@content")[0]
+
+    # Осуществляю вход через POST с указанием необходимых данных
+    post_request = session.post(url, {
+         'LoginForm[email]': 'info@bodyboost.pro',
+        'LoginForm[password]': 'kekakeku111',
+        '_csrf-frontend': csrf
+    })
+
+    headers = {'User-Agent': user_agent_val}
+    return session
