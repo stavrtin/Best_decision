@@ -38,13 +38,13 @@ url = 'https://sport-dealer.ru/search/?query=Amino+X%2C+435+g'
     actions.perform()
 
 -----------------------------------------
-# считать из json
-     with open('c:\\Users\\stavr\\Downloads\\mongo.json', 'r', encoding='utf-8') as j_file: #открываем файл на чтение
-         data1 = json.load(j_file)
+#### считать из json
+          with open('c:\\Users\\stavr\\Downloads\\mongo.json', 'r', encoding='utf-8') as j_file: #открываем файл на чтение
+              data1 = json.load(j_file)
 
-#сохранить в json
-     with open('c:\\Users\\stavr\\Downloads\\mongo_new_3.json', 'w', encoding='utf-8') as fh: #открываем файл на запись
-         fh.write(json.dumps(data_3, ensure_ascii=False)) 
+#### сохранить в json
+          with open('c:\\Users\\stavr\\Downloads\\mongo_new_3.json', 'w', encoding='utf-8') as fh: #открываем файл на запись
+              fh.write(json.dumps(data_3, ensure_ascii=False)) 
 -------------------------------------------------------------------
      pip freeze > requirements.txt
      python -m pip install -r requirements.txt  
