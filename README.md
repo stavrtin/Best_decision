@@ -38,14 +38,13 @@ url = 'https://sport-dealer.ru/search/?query=Amino+X%2C+435+g'
     actions.perform()
 
 -----------------------------------------
-Цвета
-https://github.com/ikalnytskyi/termcolor
+# считать из json
+     with open('c:\\Users\\stavr\\Downloads\\mongo.json', 'r', encoding='utf-8') as j_file: #открываем файл на чтение
+         data1 = json.load(j_file)
 
-     from termcolor import colored, cprint
-
-     print(colored('Привет мир!', 'green', attrs=['underline']))
-     # print(colored('Hello, World!', 'green', 'on_grey', 'blink'))
-     print(colored('Hello, World!', 'red', 'on_grey', ['blue', 'blink']))
+#сохранить в json
+     with open('c:\\Users\\stavr\\Downloads\\mongo_new_3.json', 'w', encoding='utf-8') as fh: #открываем файл на запись
+         fh.write(json.dumps(data_3, ensure_ascii=False)) 
 -------------------------------------------------------------------
      pip freeze > requirements.txt
      python -m pip install -r requirements.txt  
