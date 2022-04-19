@@ -15,7 +15,7 @@ parse_data = [{"_id": "SBR013-2204180006-0-7", "name_lot": "Самоходная
 
 #  ----- подключаемся к БД ----
 login = 'root'
-user_password = 'Tino4ka'
+user_password = '..ka'
 dbase = 'torgi'
 
 my_db = mysql.connector.connect(
