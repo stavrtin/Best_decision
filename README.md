@@ -4,7 +4,7 @@
      from pprint import  pprint
      from lxml import html
      import requests
-
+ 
 
 url = 'https://sport-dealer.ru/search/?query=Amino+X%2C+435+g'
 
