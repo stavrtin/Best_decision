@@ -12,7 +12,7 @@ url = 'https://sport-dealer.ru/search/?query=Amino+X%2C+435+g'
     dom = html.fromstring(response.text)
     dom.xpath('//h1')[0].text
 ------------------------------------------------
- 
+  
 Селен
 #### -------------------ХРОМДРАЙВЕР-------------------
           
