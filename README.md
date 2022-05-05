@@ -1,3 +1,10 @@
+https://live.skillbox.ru/webinars/code/parser-na-python-za-3-dnya-poslednie-shtrikhi-i-podvedenie-itogov040522/
+Парсер на Python за 3 дня: последние штрихи и подведение итогов
+Деплой и размещение на сервере 48:06....
+- зарегистрировать
+- запустить виртуальную машину
+-...
+----------------------
 https://www.youtube.com/watch?v=TiHOQwzBOOc
 Как создать мессенджер на Python. Интенсив по программированию
 
