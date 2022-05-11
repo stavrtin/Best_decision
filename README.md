@@ -7,7 +7,7 @@ https://live.skillbox.ru/webinars/code/parser-na-python-za-3-dnya-poslednie-shtr
 ----------------------
 https://www.youtube.com/watch?v=TiHOQwzBOOc
 Как создать мессенджер на Python. Интенсив по программированию
-
+  
 -----------------
 Интенсивы Skillbox
 https://live.skillbox.ru/webinars/code/parser-na-python-za-3-dnya-poslednie-shtrikhi-i-podvedenie-itogov040522/
