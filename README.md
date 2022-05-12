@@ -10,7 +10,7 @@ https://live.skillbox.ru/webinars/code/parser-na-python-za-3-dnya-poslednie-shtr
 - зарегистрировать
 - запустить виртуальную машину
 -...
-----------------------
+----------------------   
 https://www.youtube.com/watch?v=TiHOQwzBOOc
 Как создать мессенджер на Python. Интенсив по программированию
   
