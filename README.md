@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+Суперучебник 
 
+https://proproprogs.ru/python
 
 https://www.youtube.com/watch?v=crUHP8Zo12k
    Фласк уроки
