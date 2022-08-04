@@ -14,7 +14,7 @@ https://www.youtube.com/watch?v=U3wGN6qNKFA&list=PLyaCd9XYVI9DiMvYl-8OdZk7ktc6NQ
 
   Сеньер-помидор ДЖАНГО Ютуб
 -----------------------------------
-           
+             
   
 https://live.skillbox.ru/webinars/code/parser-na-python-za-3-dnya-poslednie-shtrikhi-i-podvedenie-itogov040522/
 Парсер на Python за 3 дня: последние штрихи и подведение итогов
