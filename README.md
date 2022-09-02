@@ -55,6 +55,21 @@ url = 'https://sport-dealer.ru/search/?query=Amino+X%2C+435+g'
 ------------------------------------------------
   
 Селен
+
+# from datetime import time, date, datetime, timedelta
+from datetime import time, date, datetime, timedelta
+import wait as wait
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+from pprint import pprint
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.common import exceptions as se
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.action_chains import ActionChains
+
 #### -------------------ХРОМДРАЙВЕР-------------------
           
      options = webdriver.ChromeOptions()
