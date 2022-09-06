@@ -1,3 +1,9 @@
+------------------
+Docker
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ru
+--------------------------
+
+
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 Суперучебник 
@@ -7,8 +13,7 @@ https://proproprogs.ru/python
 https://www.youtube.com/watch?v=crUHP8Zo12k
    Фласк уроки
  ------------------------------------
-   
-      
+
  
 https://www.youtube.com/watch?v=U3wGN6qNKFA&list=PLyaCd9XYVI9DiMvYl-8OdZk7ktc6NQWrb <br>
 
