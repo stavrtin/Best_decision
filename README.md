@@ -1,6 +1,6 @@
 #### 
 шаблон тлг-бота 
-
+------------------
 from tok import token
 import telegram
 from telegram import Bot
@@ -23,7 +23,7 @@ dispatcher.add_handler(start_handler)
 
 updater.start_polling()
 updater.idle()
-
+------------------
 #############################################################
 
 
