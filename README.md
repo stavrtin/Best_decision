@@ -1,28 +1,28 @@
 #### 
 шаблон тлг-бота 
-------------------
-from tok import token
-import telegram
-from telegram import Bot
-from telegram.ext import CommandHandler, MessageHandler, Updater
+        ------------------
+        from tok import token
+        import telegram
+        from telegram import Bot
+        from telegram.ext import CommandHandler, MessageHandler, Updater
 
 
 
-bot = Bot(token=token)   # ---- внести  токен бота
+        bot = Bot(token=token)   # ---- внести  токен бота
 
-updater = Updater(token, use_context=True)
-dispatcher = updater.dispatcher
+        updater = Updater(token, use_context=True)
+        dispatcher = updater.dispatcher
 
-def start(updater, context):
-    updater.message.reply_text('asdasdas')
-    # context.bot.
+        def start(updater, context):
+            updater.message.reply_text('asdasdas')
+            # context.bot.
 
-start_handler = CommandHandler('start', start)
+        start_handler = CommandHandler('start', start)
 
-dispatcher.add_handler(start_handler)
+        dispatcher.add_handler(start_handler)
 
-updater.start_polling()
-updater.idle()
+        updater.start_polling()
+        updater.idle()
 ------------------
 #############################################################
 
