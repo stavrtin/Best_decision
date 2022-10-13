@@ -1,4 +1,34 @@
-### d
+#### 
+шаблон тлг-бота 
+
+from tok import token
+import telegram
+from telegram import Bot
+from telegram.ext import CommandHandler, MessageHandler, Updater
+
+
+
+bot = Bot(token=token)   # ---- внести  токен бота
+
+updater = Updater(token, use_context=True)
+dispatcher = updater.dispatcher
+
+def start(updater, context):
+    updater.message.reply_text('asdasdas')
+    # context.bot.
+
+start_handler = CommandHandler('start', start)
+
+dispatcher.add_handler(start_handler)
+
+updater.start_polling()
+updater.idle()
+
+#############################################################
+
+
+
+### docer
 ------------------
 Docker 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ru
