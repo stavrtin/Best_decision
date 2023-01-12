@@ -1,3 +1,18 @@
+####
+--- условие для  нескольких условий в ДАТАФРЕЙМЕ ----------
+
+def flag_df(df):
+    if (df['trigger1'] <= df['score'] < df['trigger2']) and (df['height'] < 8):
+        return 'Red'
+    elif (df['trigger2'] <= df['score'] < df['trigger3']) and (df['height'] < 8):
+        return 'Yellow'
+    elif (df['trigger3'] <= df['score']) and (df['height'] < 8):
+        return 'Orange'
+    elif (df['height'] > 8):
+        return np.nan
+df2['Flag'] = df2.apply(flag_df, axis = 1)
+
+
 #### 
 шаблон тлг-бота 
 ------------------
