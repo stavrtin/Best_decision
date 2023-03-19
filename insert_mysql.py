@@ -27,6 +27,32 @@ my_db = mysql.connector.connect(
     )
 mycursor = my_db.cursor()
 
+###----
+# ------- для удаленного ---------------
+
+server = SSHTunnelForwarder(
+    # 'XXX.XXX.XXX.XXX',
+    '185.231.155.232',
+    ssh_username='root',
+    ssh_password='tVvrZX8LfFMQHjh6',
+    remote_bind_address=('127.0.0.1', 3306)
+    )
+server.start()
+
+login = 'parser'
+user_password = 'tVvrZX8LfFMQHjh6'
+dbase = 'parser'
+
+my_db = pymysql.connect(
+    host='127.0.0.1',
+    port=server.local_bind_port,
+    user=login,
+    password=user_password,
+    db=dbase,
+    cursorclass=pymysql.cursors.DictCursor
+)
+
+# ------- для удаленного END ---------------
 
 # ---- готовый запрос на создание таблицы -----
 # sql_new_table = "CREATE TABLE IF NOT EXISTS lots (id VARCHAR(100), " \
