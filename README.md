@@ -11,7 +11,7 @@ https://habr.com/ru/company/ruvds/blog/494720/
  
 -----------------------
 https://medium.com/nuances-of-programming/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D1%8B-%D0%B2-jupyter-notebook-82475fbed7de
----------------------
+--------------------- 
     
 #### 
 --- условие для  нескольких условий в ДАТАФРЕЙМЕ ----------
