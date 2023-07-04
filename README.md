@@ -1,6 +1,6 @@
 # --- -- ОФОРМЛЕНИЕ jupytherNotebook ----------
 https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
-
+  
 
          
  
