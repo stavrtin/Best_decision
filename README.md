@@ -24,7 +24,7 @@ def flag_df(df):
     elif (df['trigger3'] <= df['score']) and (df['height'] < 8):
         return 'Orange'
     elif (df['height'] > 8):
-        return np.nan
+        return np.nan 
 df2['Flag'] = df2.apply(flag_df, axis = 1)
 
 
