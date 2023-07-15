@@ -14,7 +14,7 @@ https://medium.com/nuances-of-programming/%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D
 --------------------- 
              
 ####  
---- условие для  нескольких условий в ДАТАФРЕЙМЕ ----------
+--- условие для  нескольких условий в ДАТАФРЕЙМЕ ------- ---
 
 def flag_df(df):
     if (df['trigger1'] <= df['score'] < df['trigger2']) and (df['height'] < 8):
