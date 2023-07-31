@@ -28,7 +28,7 @@ def flag_df(df):
 df2['Flag'] = df2.apply(flag_df, axis = 1)
  
   
-#### 
+####   с
 шаблон тлг-бота 
 ------------------
         from tok import token
