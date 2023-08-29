@@ -1,7 +1,7 @@
-#--Flask
-https://youtu.be/uyjp8nLGkmM
-https://www.youtube.com/watch?v=lBOq1_blG_8
-https://github.com/helloflask
+#--Flask<br>
+https://youtu.be/uyjp8nLGkmM<br>
+https://www.youtube.com/watch?v=lBOq1_blG_8<br>
+https://github.com/helloflask<br>
 
 # --- -- ОФОРМЛЕНИЕ jupytherNotebook ----------
 https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
