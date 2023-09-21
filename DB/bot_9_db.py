@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # The above encoding declaration is required and the file must be saved as UTF-8
 
-'''Создаем меню для управления ботом'''
+'''Создаем меню для управления ботом'''  
 
 # https://yandex.ru/video/preview/14627769197229213338  # -- откуда видос. Расписано отлично
 # http://text-image.ru/index/symbols/0-10   -- рисуночки отсюда----
