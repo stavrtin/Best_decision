@@ -9,7 +9,7 @@ https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-note
   
                
  
-# --- -- сводник для датафрейма ----------
+# --- -- сводник для датафрейма  ----------
 https://dfedorov.spb.ru/pandas/%D0%A1%D0%B2%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D0%B2%20pandas.html
 ----------------------
 https://habr.com/ru/company/ruvds/blog/494720/
