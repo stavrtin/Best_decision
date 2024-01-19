@@ -7,6 +7,7 @@ https://github.com/helloflask<br>
 https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd
   
   
+https://datascientyst.com/style-pandas-dataframe-like-pro-examples/
                
  
 # --- -- сводник для датафрейма  ----------
