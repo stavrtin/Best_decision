@@ -1,0 +1,241 @@
+<div class="alert alert-block alert-warning"> <font size=3>
+функция обработки ДФ
+
+
+import pandas as pd
+import numpy as np
+import warnings
+warnings.filterwarnings('ignore')
+pd.set_option('display.max_columns', 500)
+
+
+%store -r pac
+df_p = pac.copy()
+
+
+
+
+# ------------------------------------today_date-----------
+today_date = pd.to_datetime(pd.to_datetime('today').normalize(), dayfirst=True, errors = 'coerce').normalize()
+today_date
+
+
+
+# ------------------------------------Биннинг данных-----------
+
+
+df_conc['deti'] = pd.cut(
+    df_conc['Возраст'],
+    bins=[0, 17, 150],
+    labels=['Дети', 'Взрослые']
+ )
+
+------------------------ дни в число ---
+.dt.days 
+
+
+------------------------------------------------------------------------------------------------- краткий формат даты
+df_p['Дата рождения'] = pd.to_datetime(df_p['Дата рождения']).dt.strftime("%m.%d.%Y")
+
+
+
+ --------------------------------------------------------------------------------------------------------------------------------------форматнем дату к дате
+df_p['Дата рождения'] = pd.to_datetime(df_p['Дата рождения'], dayfirst=True, errors = 'coerce').dt.normalize()
+df_vid_posled['Пациент.Дата рождения'] = pd.to_datetime(df_vid_posled['Пациент.Дата рождения'], dayfirst=True, errors = 'coerce').dt.normalize()
+
+
+def norm_date(df, list_date):
+    for col_ in list_date:
+        df[col_] = pd.to_datetime(df[col_], dayfirst=True, errors = 'coerce').dt.normalize()
+    return df
+
+
+
+
+Ключ---------------------------------------------------------- ------------------------------------------------------------------------------- Ключ
+
+    df_p['Ключ'] = df_p['Пациент'].str.replace(' ', '').str.lower().str.replace('ё', 'е') + df_p['Дата рождения'].astype('str')
+
+
+
+гугл ------------------------------------------------------------------------- гугл
+    # -------------------- качаем старый гугл Оборудование_ушедших_пациентов
+    df_оборуд_ушедш = pd.read_csv('https://docs.google.com/spreadsheets/d/' + 
+                       '1z4Y1FX1Oo5dhVmXbXjQo7GuqsjjQYooFdEcH7Kec6HU' + #ключ из ссылки на документ
+                       '/export?gid=' + 
+                       '1300522810' + #лист из ссылки или 0 чтобы открылся первый лист из книги
+                       '&format=csv', dtype='object')
+
+
+today ---------------------------------------------------------------------- today
+    pd.to_datetime("today").strftime("%Y-%d-%m")
+
+
+функция возраста
+    # -------------AGE -------------
+    def calculate_age(x,y,z):
+        if z <= y:
+            age = y.year - x.year - ((y.month, y.day) < (x.month, x.day)) 
+            if age < 0:
+                age = 0
+        else:
+            age = z.year - x.year - ((z.month, z.day) < (x.month, x.day)) 
+            if age < 0:
+                age = 0
+        return age
+
+     df_concat['Возраст'] = df_concat.apply( lambda x:  calculate_age(x['ДР'], now, x['Дата_первых_сведений']),axis=1)----------------------------------------------------------- возраста
+
+------------------------------------------------------------------------------------------------------------------------------lambda
+df = df.apply(lambda x: np.square(x) if x.name == 'd' else x, axis=1)
+
+
+
+groupby -------------------------------------- groupby -------------------
+    df_НС.groupby(['deti','Онко',]).agg({'ФИО пациента':'count'})
+
+    ----------------
+    df.groupby(['col1','col2']).agg(
+         sum_col3 = ('col3','sum'),
+         sum_col4 = ('col4','sum'),
+         ).reset_index()
+
+    ----------------
+    df_862_гугл.groupby('Причина статуса без смерть без П/О').agg(sum_col3 = ('ФИО пациента','count')).reset_index().sort_values('sum_col3')
+
+
+-------------------- sort ---
+df_vizit_только_врач.sort_values(by=['Клиент.Код', 'Взаимодействие.Плановая дата'], ascending=[True])# , ascending=[True, False])
+
+
+
+---------- начальные пробелы -*-*-*-*-*
+df_vidachag = df_vidachag.replace(r"^ +| +$", r"", regex=True)
+
+
+
+
+---------------------
+df_vidachag[df_vidachag['*****'] == '***']
+
+
+
+--------------------------------------------------------
+df_google_only_poluch[df_google_only_poluch.duplicated('Ключ', keep=False)].sort_values('Ключ')
+
+
+
+------------------------- COLOR ------
+
+    !pip install simple_colors
+    from simple_colors import *
+    print(green(f' __dfdf__'.format(str)))
+
+
+
+
+# ------------------------------------------------ функция нормализации даты ---------------------
+#  -------------------------------------------------------------------форматнем дату к дате
+list_coluns_date = [
+    'Отметка времени',
+    'Планируемая дата транспортировки / подачи машины / усиления или отказа от машины',
+    'Дата заявки',
+    'Выбранная дата в статусе загрузки машин',
+    'Выбранная дата в статусе загрузки санитаров',
+]
+
+def norm_date(df, list_date):
+    for col_ in list_date:
+        df[col_] = pd.to_datetime(df[col_], dayfirst=True, errors = 'coerce').dt.normalize()
+    return df
+
+
+
+
+
+# def data_norm(df, list_columns):
+#     for i in list_columns:
+#         df[i] = pd.to_datetime(df[i]).dt.strftime("%d.%m.%Y")
+#     return df
+
+
+------------------------------------ подстрока
+df['col'] = df['col'].str[:9]
+
+
+
+# 🔎![image.png](attachment:8c492c1e-7038-464c-94f7-42b51df83acc.png) Загрузка
+## ✅ Задание 1
+![alt text](https://san2.ru/images/hobby/gif/internetmap/10261.gif)
+![alt text](https://san2.ru/images/hobby/gif/internetmap/262.gif)
+
+https://skrinshoter.ru/sQfHu6IJQE6?a
+
+---------------------------------------------------------------------------------- КАРТИНКИ 
+<img src="./Исходники_3й_кв/на_руки.jpg" width="500">
+
+
+
+
+postgres_oa
+
+--------------------------------------------------------------------------------------------------------- только ДУБЛИКАТЫ 
+df_google_only_poluch[df_google_only_poluch.duplicated('Ключ', keep=False)].sort_values('Ключ')
+df_monitor[df_monitor.duplicated('Инвентарный номер (указывать цифры, без номера)')]
+
+
+
+
+---------------------------------- PIVOT 
+pd.pivot_table(df,
+               index=["Manager", "Status"],
+               columns=["Product"],
+               values=["Quantity", "Price"],
+               aggfunc={"Quantity": len, "Price": np.sum},
+               fill_value=0)
+
+
+
+____________________.unique().tolist()
+
+
+
+#----------------------------- трюки с ноутбуками -------------------
+https://uproger.com/obrabotka-i-analiz-dannyh-python-15-krutyh-tryukov-jupiter-kotorye-sekonomyat-vam-vremya/
+
+
+# pd.to_datetime("today").strftime("%Y-%d-%m") - pd.DateOffset(years=1)
+# (pd.to_datetime("today") - pd.DateOffset(months=1))
+
+
+# fig, ax = plt.subplots(figsize=(14, 6))
+# # sns.heatmap(df_ppi,cmap='coolwarm', square=True, annot=True, fmt=',.0f')
+# sns.heatmap(df_pps, cmap='crest', square=True, annot=True, fmt=',.0f')
+# plt.show()
+
+
+with pd.ExcelWriter(path_file + 'df_oblako_new_korkc_' + datetime.now().strftime("%Y%m%d") + '.xlsx',
+                      engine="xlsxwriter",
+                      date_format='DD.MM.YYYY',
+                      datetime_format='DD.MM.YYYY') as writer:
+    df_save.to_excel(writer, freeze_panes=(2,0), index = False)
+
+
+
+
+with pd.ExcelWriter('df_emias_облако' + '.xlsx',
+                      engine="xlsxwriter",
+                      date_format='DD.MM.YYYY',
+                      datetime_format='DD.MM.YYYY') as writer:
+    df_emias_облако.to_excel(writer, freeze_panes=(2,0), index = False)
+
+
+
+горячие клавиши в VSC
+https://www.nikomedvedev.ru/other/vscodeshortcuts/hotkeys.html
+
+# /------------------------------------------------------------------------------------- отсавим ПОСЛЕДНИЙ 
+# ----------------------- сортировка по убывыанию
+df_kis = df_kis.sort_values('Дата госпитализации', ascending=False)
+# --------------------------- выбрать последнгиие ГОСПИТАЛИЗАЦИИ
+df_kis_last = df_kis.drop_duplicates('фиодр', keep='first')
